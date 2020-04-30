@@ -3,7 +3,7 @@ import React from 'react';
 import { Map, TileLayer, Marker, Popup } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css';
 
-const App = () => {
+const MapContainer = () => {
   const position = [59.4370, 24.7536]
   return (
     <Map center={position} zoom={13}>
@@ -15,5 +15,4 @@ const App = () => {
   )
 }
 
-export default App;
-// export default Map;
+export default MapContainer;

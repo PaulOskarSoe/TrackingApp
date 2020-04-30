@@ -4,7 +4,8 @@ const MarkerContainer = () => {
   return(
     <div id="marker-container">
       <div id="marker-content">
-        <h2 id="marker-content-header">Markers: </h2>
+        <h3 id="marker-content-header">ASUKOHAD</h3>
+        <hr/>
       </div>
     </div>
   )
