@@ -1,0 +1,23 @@
+body, html{
+  margin: 0px;
+  padding: 0px;
+}
+
+#main-container{
+  display: flex;
+}
+
+
+#marker-container {
+  width: 15%;
+  background-color: #eee;
+}
+
+#marker-content-header{
+  text-align: center;
+}
+
+.leaflet-container {
+  height: 1000px;
+  width: 85%;
+}
