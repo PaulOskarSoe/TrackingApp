@@ -15,10 +15,11 @@ router.get('/', async (req, res) => {
 });
 
 router.post('/', async (req, res) => {
-  const { deviceId, deviceName, lattitude, longitude } = req.body;
+  const { deviceId, deviceName, latitude, longitude } = req.body;
   
   try {
-    const newPosition = await Marker.update({ deviceId },{ $set : { deviceId, deviceName, lattitude, longitude }} , { upsert: true });
+    
+    const newPosition = await Marker.update({ deviceId },{ $set : { deviceId, deviceName, latitude, longitude }} , { upsert: true });
     res.json({ success: true, message: "Marker was updated", newPosition, code: 200});
   } catch (error) {
     console.error('Error while adding devince or new position to database!');

@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
 
 const MarkerSchema = mongoose.Schema({
-  deviceID    : String,
+  deviceId    : String,
   deviceName  : String,
-  lattitude   : String,
+  latitude    : String,
   longitude   : String,
 });
 
-module.exports = MarkerSchema;
+module.exports = mongoose.model('marker', MarkerSchema);
