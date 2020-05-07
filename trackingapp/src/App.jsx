@@ -19,12 +19,10 @@ const App = () => {
     updateMarkers(devices);
   }
 
-  console.log(markers)  
-
   return(
     <div id="main-container">
       <Map markers={markers} />
-      <MarkerContainer />
+      <MarkerContainer markers={markers}/>
     </div>
   );
 };
